@@ -1,10 +1,11 @@
-.App {
-  text-align: center;
+:root {
+  --header-height: calc(52.5px + 2px + 1px);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-heading a {
+  color: #111;
+  text-decoration: none;
+  margin: 5px auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,18 +15,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  border-bottom: 2px solid #2b2b2b;
+  background: #fff;
 }
 
 @keyframes App-logo-spin {

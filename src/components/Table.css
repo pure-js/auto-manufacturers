@@ -1,0 +1,6 @@
+.table-heading {
+  position: sticky;
+  top: var(--header-height);
+  background: #fff;
+  border-bottom: 1px solid #373737;
+}
