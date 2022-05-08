@@ -1,6 +1,17 @@
+.table {
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+
 .table-heading {
   position: sticky;
   top: var(--header-height);
   background: #fff;
   border-bottom: 1px solid #373737;
+  padding: 1px 8px 1px 1px;
+}
+
+.table-cell {
+  vertical-align: top;
+  padding: 1px 8px 1px 1px;
 }

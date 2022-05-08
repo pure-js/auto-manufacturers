@@ -1,11 +1,14 @@
 :root {
-  --header-height: calc(52.5px + 2px + 1px);
+  --header-height: calc(52.5px + 2px + 2px);
+}
+
+.main-heading {
+  margin: 5px auto;
 }
 
 .main-heading a {
   color: #111;
   text-decoration: none;
-  margin: 5px auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {

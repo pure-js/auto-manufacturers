@@ -1,7 +1,13 @@
-const Manufactureer = () => (
-  <main className="container">
-    <h1>34</h1>
-  </main>
-);
+import { useParams } from 'react-router-dom';
 
-export default Manufactureer;
+const Manufacturer = () => {
+  let { id } = useParams();
+
+  return (
+    <main className="container">
+      <h1>{ id }</h1>
+    </main>
+  );
+}
+
+export default Manufacturer;
