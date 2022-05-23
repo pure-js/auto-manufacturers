@@ -1,6 +1,7 @@
 .table {
   border-spacing: 0;
   margin-bottom: 20px;
+  border-collapse: collapse;
 }
 
 .table-heading {
@@ -11,7 +12,19 @@
   padding: 1px 8px 1px 1px;
 }
 
+.table-row {
+  border-top: 1px solid #e6e6e6;
+}
+
 .table-cell {
   vertical-align: top;
   padding: 1px 8px 1px 1px;
+}
+
+.table-cell_secondary {
+  color: #5c5c5c;
+}
+
+.table-cell__link {
+  color: #373737;
 }
