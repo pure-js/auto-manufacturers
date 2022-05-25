@@ -1,15 +1,15 @@
 import { call, put, takeEvery, takeLatest } from 'redux-saga/effects';
-import { fetchManufacturers } from './api';
+// import { fetchManufacturers } from './api';
 
 // worker Saga: will be fired on USER_FETCH_REQUESTED actions
-function* fetchUser(action) {
-   try {
-      const user = yield call(fetchManufacturers, action.payload.userId);
-      yield put({type: "USER_FETCH_SUCCEEDED", user: user});
-   } catch (e) {
-      yield put({type: "USER_FETCH_FAILED", message: e.message});
-   }
-}
+// function* fetchUser(action: any) {
+//    try {
+//       const user = yield call(fetchManufacturers, action.payload.userId);
+//       yield put({type: "USER_FETCH_SUCCEEDED", user: user});
+//    } catch (e) {
+//       yield put({type: "USER_FETCH_FAILED", message: e.message});
+//    }
+// }
 
 /*
   Starts fetchUser on each dispatched `USER_FETCH_REQUESTED` action.
@@ -18,6 +18,8 @@ function* fetchUser(action) {
 // function* mySaga() {
 //   yield takeEvery("USER_FETCH_REQUESTED", fetchUser);
 // }
+
+const fetchUser = () => {};
 
 /*
   Alternatively you may use takeLatest.

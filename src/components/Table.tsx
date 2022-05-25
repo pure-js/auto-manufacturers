@@ -8,7 +8,13 @@ import { getEmojiFlagByISO } from '../helpers/getEmojiFlagByISO'
 import './Table.css';
 import './Helpers.css';
 
-const Table = ({ manufacturers, isLoading, isError }) => (
+interface TableProps {
+  manufacturers: Array<any> | null;
+  isLoading: boolean;
+  isError: boolean;
+}
+
+const Table = ({ manufacturers, isLoading, isError }: TableProps) => (
   <table className="table">
     <thead>
       <tr>
