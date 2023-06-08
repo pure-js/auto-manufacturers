@@ -1,4 +1,4 @@
 jobs:
   call-lint-workflow-in-another-repo:
-    uses: pure-js/reusable-workflows/.github/workflows/lints.yml
+    uses: pure-js/reusable-workflows/.github/workflows/lints.yml@main
     secrets: inherit
