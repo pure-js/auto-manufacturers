@@ -12,9 +12,9 @@
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@reduxjs/toolkit": "^1.8.1",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "react-router-dom": "^6.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.14.1",
     "redux-saga": "^1.1.3"
   },
   "devDependencies": {
@@ -26,8 +26,8 @@
     "@storybook/react": "^6.4.21",
     "@storybook/testing-library": "^0.0.9",
     "@types/jest": "^27.5.1",
-    "@types/react": "^18.0.2",
-    "@types/react-dom": "18.0.0",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "18.2.6",
     "@vitejs/plugin-react": "1.3.0",
     "babel-loader": "^8.2.4",
     "jest": "^28.1.0",
