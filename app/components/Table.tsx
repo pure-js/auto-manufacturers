@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { ExternalLinkIcon } from '@heroicons/react/outline';
 
 import Loading from '../Loading';
@@ -31,7 +31,7 @@ const Table = ({ manufacturers, isLoading, isError }: TableProps) => (
           <td className="table-cell txt-left">{ Name ? Name : Mfr_Name }</td>
           <td className='table-cell'>{ Country } { getEmojiFlagByISO('US') }</td>
           <td>
-            <Link to={`/manufacturers/${Id}`} className="table-cell__link">
+            <Link href={`/manufacturers/${Id}`} className="table-cell__link">
               <ExternalLinkIcon width={18} height={18} />
             </Link>
           </td>
