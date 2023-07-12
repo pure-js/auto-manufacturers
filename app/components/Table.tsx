@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import { ExternalLinkIcon } from '@heroicons/react/outline';
+import Link from 'next/link';
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
 import Loading from '../Loading';
 import { getFlagByCountryName } from '../helpers/getEmojiFlagByISO'
@@ -31,8 +31,8 @@ const Table = ({ manufacturers, isLoading, isError }: TableProps) => (
           <td className="table-cell txt-left">{ Name ? Name : Mfr_Name }</td>
           <td className='table-cell'>{ Country } { getFlagByCountryName(Country) }</td>
           <td>
-            <Link to={`/manufacturers/${Id}`} className="table-cell__link">
-              <ExternalLinkIcon width={18} height={18} />
+            <Link href={`/manufacturers/${Id}`} className="table-cell__link">
+              <ArrowTopRightOnSquareIcon width={18} height={18} />
             </Link>
           </td>
         </tr>
