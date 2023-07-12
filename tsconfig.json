@@ -19,11 +19,22 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
-    "src"
-, "app/page.tsx", "app/manufacturers/[id]/page.tsx", "app/components", "app/helpers", "app/api.ts"  ],
+    "src",
+    "app/page.tsx",
+    "app/manufacturers/[id]/page.tsx",
+    "app/components",
+    "app/helpers",
+    "app/api.ts",
+    ".next/types/**/*.ts"
+  ],
   "references": [
     {
       "path": "./tsconfig.node.json"
