@@ -7,7 +7,7 @@ type User = {
   name: string;
 };
 
-export const Page: React.FC = () => {
+export const Page: React.VFC = () => {
   const [user, setUser] = React.useState<User>();
 
   return (
@@ -19,7 +19,7 @@ export const Page: React.FC = () => {
         onCreateAccount={() => setUser({ name: 'Jane Doe' })}
       />
 
-      <section className="storybook-page">
+      <section>
         <h2>Pages in Storybook</h2>
         <p>
           We recommend building UIs with a{' '}
