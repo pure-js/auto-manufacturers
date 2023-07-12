@@ -1,4 +1,4 @@
-const COUNTRIES = [
+export const COUNTRIES = new Map([
   ['united states (usa)', 'US'],
   ['germany', 'DE'],
   ['united kingdom (uk)', 'GB'],
@@ -10,6 +10,4 @@ const COUNTRIES = [
   ['italy', 'IT'],
   ['south korea', 'KR'],
   ['turkey', 'TR'],
-];
-
-export const Countries = new Map(COUNTRIES);
+]);
