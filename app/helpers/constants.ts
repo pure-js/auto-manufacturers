@@ -6,6 +6,10 @@ const COUNTRIES = [
   ['china', 'CN'],
   ['japan', 'JP'],
   ['france', 'FR'],
+  ['mexico', 'MX'],
+  ['italy', 'IT'],
+  ['south korea', 'KR'],
+  ['turkey', 'TR'],
 ];
 
 export const Countries = new Map(COUNTRIES);
