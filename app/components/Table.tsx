@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
 import Loading from '../Loading';
-import { getEmojiFlagByISO } from '../helpers/getEmojiFlagByISO'
+import { getFlagByCountryName } from '../helpers/getEmojiFlagByISO'
 // import { toLamaCase } from './toLamaCase';
 
 import './Table.css';
@@ -29,7 +29,7 @@ const Table = ({ manufacturers, isLoading, isError }: TableProps) => (
         <tr key={Id} className="table-row">
           <td className='table-cell txt-right table-cell_secondary'>{ Id }</td>
           <td className="table-cell txt-left">{ Name ? Name : Mfr_Name }</td>
-          <td className='table-cell'>{ Country } { getEmojiFlagByISO('US') }</td>
+          <td className='table-cell'>{ Country } { getFlagByCountryName(Country) }</td>
           <td>
             <Link href={`/manufacturers/${Id}`} className="table-cell__link">
               <ArrowTopRightOnSquareIcon width={18} height={18} />
