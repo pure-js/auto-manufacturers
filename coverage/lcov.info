@@ -1,5 +1,5 @@
 TN:
-SF:src/helpers/getEmojiFlagByISO.ts
+SF:app/helpers/getEmojiFlagByISO.ts
 FN:1,getEmojiFlagByISO
 FNF:1
 FNH:1

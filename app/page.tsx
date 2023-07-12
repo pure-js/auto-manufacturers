@@ -1,9 +1,10 @@
+"use client";
 import { useEffect, useState } from 'react';
 
-import Table from '../components/Table';
-import { fetchManufacturers } from '../api';
+import Table from './components/Table';
+import { fetchManufacturers } from './api';
 
-import '../components/Grid.css';
+import './components/Grid.css';
 
 const Home = () => {
   const [isLoading, setIsLoading]= useState(true);
