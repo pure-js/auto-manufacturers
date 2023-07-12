@@ -25,6 +25,8 @@
     "@storybook/addon-interactions": "^7.0.26",
     "@storybook/addon-links": "^7.0.26",
     "@storybook/addon-mdx-gfm": "^7.0.26",
+    "@storybook/blocks": "^7.0.26",
+    "@storybook/nextjs": "^7.0.26",
     "@storybook/react": "^7.0.26",
     "@storybook/testing-library": "^0.2.0",
     "@types/jest": "^27.5.1",
@@ -35,6 +37,6 @@
     "storybook": "^7.0.26",
     "ts-jest": "^29.1.1",
     "ts-node": "^10.8.0",
-    "typescript": "4.6.3"
+    "typescript": "^5.1.6"
   }
 }
