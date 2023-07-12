@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ExternalLinkIcon } from '@heroicons/react/outline';
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
 import Loading from '../Loading';
 import { getEmojiFlagByISO } from '../helpers/getEmojiFlagByISO'
@@ -32,7 +32,7 @@ const Table = ({ manufacturers, isLoading, isError }: TableProps) => (
           <td className='table-cell'>{ Country } { getEmojiFlagByISO('US') }</td>
           <td>
             <Link href={`/manufacturers/${Id}`} className="table-cell__link">
-              <ExternalLinkIcon width={18} height={18} />
+              <ArrowTopRightOnSquareIcon width={18} height={18} />
             </Link>
           </td>
         </tr>
