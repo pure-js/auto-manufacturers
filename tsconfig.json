@@ -27,12 +27,12 @@
     ]
   },
   "include": [
-    "src",
     "app/page.tsx",
     "app/manufacturers/[id]/page.tsx",
     "app/components",
     "app/helpers",
     "app/api.ts",
+    "app/**/*.tsx",
     ".next/types/**/*.ts"
   ],
   "references": [
