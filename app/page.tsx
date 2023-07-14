@@ -1,31 +1,18 @@
-"use client";
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 
 import Table from './components/Table';
-import { fetchManufacturers } from './api';
+import { getManufacturers } from './api';
 
 import './components/Grid.css';
 
-const Home = () => {
-  const [isLoading, setIsLoading]= useState(true);
-  const [isError, setIsError]= useState(false);
-  const [manufacturers, setManufacturers]= useState(null);
-  useEffect(() => {
-    // setIsLoading(true);
-    fetchManufacturers().then(data => {
-      console.log(data);
-      setManufacturers(data.Results);
-      setIsLoading(false);
-    }).catch((error) => {
-      setIsError(true);
-    })
-  }, []);
+const HomePage = async () => {
+  const manufacturers = await getManufacturers().then(data => data.Results);
 
   return (
     <main className="container">
-      <Table manufacturers={manufacturers} isLoading={isLoading} isError={isError} />
+      <Table manufacturers={manufacturers} />
     </main>
   );
 }
 
-export default Home;
+export default HomePage;

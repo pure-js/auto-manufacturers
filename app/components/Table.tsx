@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
-import Loading from '../Loading';
 import { getFlagByCountryName } from '../helpers/getEmojiFlagByISO'
 // import { toLamaCase } from './toLamaCase';
 
@@ -10,11 +9,9 @@ import './Helpers.css';
 
 interface TableProps {
   manufacturers: Array<any> | null;
-  isLoading: boolean;
-  isError: boolean;
 }
 
-const Table = ({ manufacturers, isLoading, isError }: TableProps) => (
+const Table = ({ manufacturers }: TableProps) => (
   <table className="table">
     <thead>
       <tr>
@@ -37,14 +34,6 @@ const Table = ({ manufacturers, isLoading, isError }: TableProps) => (
           </td>
         </tr>
       )) }
-      { isLoading || isError && (
-        <tr>
-          <td colSpan={3}>
-            { isLoading && (<Loading />) }
-            { isError && (<h3>Error!</h3>) }
-          </td>
-        </tr>
-      ) }
     </tbody>
   </table>
 );
