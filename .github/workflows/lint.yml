@@ -2,6 +2,6 @@ on:
   push:
 
 jobs:
-  call-lint-workflow-in-another-repo:
+  call-code-linting:
     uses: pure-js/reusable-workflows/.github/workflows/lint.yml@main
     secrets: inherit
