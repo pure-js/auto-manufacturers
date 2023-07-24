@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/pure-js/auto-manufacturers/compare/v1.0.0...v1.0.1) (2023-07-24)
+
+
+### Bug Fixes
+
+* use client navigation for dynamic routes ([#17](https://github.com/pure-js/auto-manufacturers/issues/17)) ([48e1e28](https://github.com/pure-js/auto-manufacturers/commit/48e1e28a9ebd492333467d20b5b4e1d25dee7681))
+
 ## 1.0.0 (2023-07-14)
 
 
