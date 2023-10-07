@@ -3,6 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',
   basePath: '/auto-manufacturers',
-}
+};
 
 module.exports = nextConfig;
