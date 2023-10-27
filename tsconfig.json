@@ -23,14 +23,14 @@
       { "name": "typescript-plugin-css-modules" }
     ],
     "paths": {
-      "@/components/*": ["./components/*"],
-      "@/helpers/*": ["./helpers/*"],
-      "@/api/*": ["./api/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/helpers/*": ["./src/helpers/*"],
+      "@/api/*": ["./src/api/*"],
     }
   },
   "include": [
-    "**/*.ts",
-    "**/*.tsx",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
     ".next/types/**/*.ts"
   ],
   "references": [

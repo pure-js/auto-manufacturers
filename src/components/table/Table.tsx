@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
-import { getFlagByCountryName } from '@/helpers/getEmojiFlagByISO';
+import { getFlagByCountryName } from '../../helpers/getEmojiFlagByISO';
 // import { toLamaCase } from './toLamaCase';
 
 import '@/helpers/helpers.css';
