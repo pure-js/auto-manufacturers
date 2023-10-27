@@ -1,4 +1,4 @@
-import styles from '@/components/grid.module.css';
+import styles from '@/components/layout/grid.module.css';
 
 const Manufacturer = ({ params }: { params: { id: string } }) => {
 
