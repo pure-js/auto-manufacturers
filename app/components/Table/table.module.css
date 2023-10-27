@@ -1,22 +1,22 @@
 .table {
-  border-spacing: 0;
   margin-bottom: 20px;
   border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.table-heading {
+.heading {
   position: sticky;
   top: var(--header-height);
-  background: #fff;
   border-bottom: 1px solid #373737;
+  background: #fff;
   padding: 1px 8px 1px 1px;
 }
 
-.table-row {
+.row {
   border-top: 1px solid #e6e6e6;
 }
 
-.table-cell {
+.cell {
   vertical-align: top;
   padding: 1px 8px 1px 1px;
 }
