@@ -1,10 +1,6 @@
-import './loading.css';
+import Loader from '@/components/loader'
 
-const Loading = () => (
-  <>
-    {/* <div className="loading-icon_animated" /> */}
-    <h3>Loading...</h3>
-  </>
-);
-
-export default Loading;
+export default function Loading() {
+  // Or a custom loading skeleton component
+  return <Loader />
+}

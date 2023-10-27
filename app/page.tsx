@@ -1,7 +1,7 @@
 // import { useEffect, useState } from 'react';
 
 import Table from '@/components/table';
-import { getManufacturers } from './api';
+import { getManufacturers } from '../api/api';
 
 import styles from '@/components/layout/grid.module.css';
 
