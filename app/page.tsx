@@ -3,13 +3,13 @@
 import Table from '@/components/Table';
 import { getManufacturers } from './api';
 
-import '@/components/grid.css';
+import styles from '@/components/grid.module.css';
 
 const HomePage = async () => {
   const manufacturers = await getManufacturers().then((data) => data.Results);
 
   return (
-    <main className="container">
+    <main className={styles.container}>
       <Table manufacturers={manufacturers} />
     </main>
   );
