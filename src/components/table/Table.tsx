@@ -7,7 +7,7 @@ import { getFlagByCountryName } from '@/helpers/getEmojiFlagByISO';
 // import { toLamaCase } from './toLamaCase';
 
 import '@/helpers/helpers.css';
-import styles from './table.module.css';
+import table from './table.module.css';
 
 interface TableProps {
   manufacturers: Array<any> | null;
@@ -17,34 +17,34 @@ const Table = ({ manufacturers }: TableProps) => {
   const router = useRouter();
 
   return (
-    <table className={styles.table}>
+    <table className={table.default}>
       <thead>
         <tr>
-          <td className={[styles.heading, 'txt-right'].join(' ')}>ID</td>
-          <td className={[styles.heading, 'txt-right'].join(' ')}>
+          <td className={[table.heading, 'txt-right'].join(' ')}>ID</td>
+          <td className={[table.heading, 'txt-right'].join(' ')}>
             Common name
           </td>
-          <td className={styles.heading}>Country</td>
-          <td className={styles.heading} />
+          <td className={table.heading}>Country</td>
+          <td className={table.heading} />
         </tr>
       </thead>
       <tbody>
         {manufacturers?.map(
           ({ Mfr_ID: Id, Country, Mfr_CommonName: Name, Mfr_Name }) => (
-            <tr key={Id} className={styles.row}>
+            <tr key={Id} className={table.row}>
               <td
                 className={[
-                  styles.cell,
+                  table.cell,
                   'txt-right',
-                  styles['table-cell_secondary'],
+                  table['cell_secondary'],
                 ].join(' ')}
               >
                 {Id}
               </td>
-              <td className={[styles.cell, 'txt-left'].join(' ')}>
+              <td className={[table.cell, 'txt-left'].join(' ')}>
                 {Name ? Name : Mfr_Name}
               </td>
-              <td className={styles.cell}>
+              <td className={table.cell}>
                 {Country} {getFlagByCountryName(Country)}
               </td>
               <td>
@@ -54,7 +54,7 @@ const Table = ({ manufacturers }: TableProps) => {
                     router.push(`/manufacturers/${Id}`);
                   }}
                   href={`/manufacturers/${Id}`}
-                  className={styles['table-cell__link']}
+                  className={table['cell__link']}
                 >
                   <ArrowTopRightOnSquareIcon width={18} height={18} />
                 </a>
