@@ -6,7 +6,7 @@ import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 import { getFlagByCountryName } from '@/helpers/getEmojiFlagByISO';
 // import { toLamaCase } from './toLamaCase';
 
-import '@/components/helpers.css';
+import '@/helpers/helpers.css';
 import styles from './table.module.css';
 
 interface TableProps {
