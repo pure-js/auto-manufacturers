@@ -1,4 +1,4 @@
-.table {
+.default {
   margin-bottom: 20px;
   border-collapse: collapse;
   border-spacing: 0;
@@ -21,10 +21,10 @@
   padding: 1px 8px 1px 1px;
 }
 
-.table-cell_secondary {
+.cell_secondary {
   color: #5c5c5c;
 }
 
-.table-cell__link {
+.cell__link {
   color: #373737;
 }

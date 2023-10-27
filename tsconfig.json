@@ -29,12 +29,8 @@
     }
   },
   "include": [
-    "app/page.tsx",
-    "app/manufacturers/[id]/page.tsx",
-    "components",
-    "helpers",
-    "api/api.ts",
-    "app/**/*.tsx",
+    "**/*.ts",
+    "**/*.tsx",
     ".next/types/**/*.ts"
   ],
   "references": [
