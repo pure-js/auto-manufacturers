@@ -1,2 +1,24 @@
 singleQuote: true
-plugins: ['prettier-plugin-css-order']
+plugins:
+  - 'prettier-plugin-css-order'
+  - '@trivago/prettier-plugin-sort-imports'
+importOrder:
+  [
+    '^react$',
+    '^next/(.*)$',
+    '<THIRD_PARTY_MODULES>',
+    '^@/hooks/(.*)$',
+    '^@/utils/(.*)$',
+    '^@/graphql/(.*)$',
+    '^@/redux/(.*)$',
+    '^@/shared/(.*)$',
+    '^@/constants/(.*)$',
+    '^@/components/(.*)$',
+    '^@/(.*)$',
+    '^app/(.*)$',
+    '^@/assets/(.*)$',
+    '^[./]',
+  ]
+importOrderSeparation: true
+importOrderSortSpecifiers: true
+importOrderCaseInsensitive: true

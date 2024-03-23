@@ -5,7 +5,7 @@ import './App.css';
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -17,10 +17,12 @@ export default function RootLayout({
       </head>
       <body>
         <header className="App-header">
-          <h1 className='main-heading'><Link href="/">Vehicle manufacturers</Link></h1>
+          <h1 className="main-heading">
+            <Link href="/">Vehicle manufacturers</Link>
+          </h1>
         </header>
-        { children }
+        {children}
       </body>
     </html>
-  )
+  );
 }

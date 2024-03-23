@@ -9,10 +9,10 @@ module.exports = async (phase) => {
     const nextConfig = {
       reactStrictMode: true,
       output: 'export',
-    }
-    return nextConfig
+    };
+    return nextConfig;
   }
- 
+
   /**
    * @type {import('next').NextConfig}
    */
@@ -20,6 +20,6 @@ module.exports = async (phase) => {
     reactStrictMode: true,
     output: 'export',
     basePath: '/auto-manufacturers', // GitHub pages
-  }
-  return nextConfig
-}
+  };
+  return nextConfig;
+};
