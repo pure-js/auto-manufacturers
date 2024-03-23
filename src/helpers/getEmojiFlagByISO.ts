@@ -19,6 +19,6 @@ export function formatName(name: string) {
 
 export function getFlagByCountryName(name: string) {
   const ISO = COUNTRIES.get(name.toLowerCase());
-  console.log(ISO);
+  // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
   return ISO ? getEmojiFlagByISO(ISO) : '';
 }
