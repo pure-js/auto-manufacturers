@@ -10,7 +10,12 @@ import '@/helpers/helpers.css';
 import table from './table.module.css';
 
 interface TableProps {
-  manufacturers: Array<any> | null;
+  manufacturers: [{
+    Mfr_ID: number;
+    Country: string;
+    Mfr_CommonName: string;
+    Mfr_Name: string;
+  }] | null;
 }
 
 const Table = ({ manufacturers }: TableProps) => {
@@ -30,31 +35,32 @@ const Table = ({ manufacturers }: TableProps) => {
       </thead>
       <tbody>
         {manufacturers?.map(
-          ({ Mfr_ID: Id, Country, Mfr_CommonName: Name, Mfr_Name }) => (
-            <tr key={Id} className={table.row}>
+          ({ Mfr_ID: id, Country: country, Mfr_CommonName: name, Mfr_Name: officialName }) => (
+            <tr key={id} className={table.row}>
               <td
                 className={[
                   table.cell,
                   'txt-right',
-                  table['cell_secondary'],
+                  table.cell_secondary,
                 ].join(' ')}
               >
-                {Id}
+                {id}
               </td>
               <td className={[table.cell, 'txt-left'].join(' ')}>
-                {Name ? Name : Mfr_Name}
+                {(name !== "") || officialName}
               </td>
               <td className={table.cell}>
-                {Country} {getFlagByCountryName(Country)}
+                {country} {getFlagByCountryName(country)}
               </td>
               <td>
                 <a
                   onClick={(e) => {
                     e.preventDefault();
-                    router.push(`/manufacturers/${Id}`);
+                    router.push(`/manufacturers/${id}`);
                   }}
-                  href={`/manufacturers/${Id}`}
-                  className={table['cell__link']}
+                  href={`/manufacturers/${id}`}
+                  className={table.cell__link}
+                  title="View Manufacturer Details"
                 >
                   <ArrowTopRightOnSquareIcon width={18} height={18} />
                 </a>

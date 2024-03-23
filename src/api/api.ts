@@ -7,5 +7,5 @@ export async function getManufacturers(page = 1) {
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
-  return res.json();
+  return await res.json();
 };

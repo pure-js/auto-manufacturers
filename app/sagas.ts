@@ -1,4 +1,4 @@
-import { call, put, takeEvery, takeLatest } from 'redux-saga/effects';
+import { takeLatest } from 'redux-saga/effects';
 // import { fetchManufacturers } from './api';
 
 // worker Saga: will be fired on USER_FETCH_REQUESTED actions

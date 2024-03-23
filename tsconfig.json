@@ -28,7 +28,7 @@
       "@/api/*": ["./src/api/*"]
     }
   },
-  "include": ["./src/**/*.ts", "./src/**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["src/**/*", "app/**/*", ".next/types/**/*.ts", "./next.config.js"],
   "references": [
     {
       "path": "./tsconfig.node.json"
