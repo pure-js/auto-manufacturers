@@ -1,8 +1,7 @@
-
 export default defineConfig({
   plugins: [
     WorkBox({
-      includeAssets: ['favicon.svg'],  
+      includeAssets: ['favicon.svg'],
       manifest: {
         name: 'Auto Manufacturers',
         short_name: 'Manufacturers',
@@ -14,8 +13,8 @@ export default defineConfig({
             sizes: '512x512',
             type: 'image/svg',
           },
-        ]
-      }
-    })
-  ]
+        ],
+      },
+    }),
+  ],
 });

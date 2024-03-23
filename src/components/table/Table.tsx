@@ -1,21 +1,26 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
 import { getFlagByCountryName } from '@/helpers/getEmojiFlagByISO';
 // import { toLamaCase } from './toLamaCase';
-
 import '@/helpers/helpers.css';
+
 import table from './table.module.css';
 
 interface TableProps {
-  manufacturers: [{
-    Mfr_ID: number;
-    Country: string;
-    Mfr_CommonName: string;
-    Mfr_Name: string;
-  }] | null;
+  manufacturers:
+    | [
+        {
+          Mfr_ID: number;
+          Country: string;
+          Mfr_CommonName: string;
+          Mfr_Name: string;
+        },
+      ]
+    | null;
 }
 
 const Table = ({ manufacturers }: TableProps) => {
@@ -35,19 +40,22 @@ const Table = ({ manufacturers }: TableProps) => {
       </thead>
       <tbody>
         {manufacturers?.map(
-          ({ Mfr_ID: id, Country: country, Mfr_CommonName: name, Mfr_Name: officialName }) => (
+          ({
+            Mfr_ID: id,
+            Country: country,
+            Mfr_CommonName: name,
+            Mfr_Name: legalName,
+          }) => (
             <tr key={id} className={table.row}>
               <td
-                className={[
-                  table.cell,
-                  'txt-right',
-                  table.cell_secondary,
-                ].join(' ')}
+                className={[table.cell, 'txt-right', table.cell_secondary].join(
+                  ' ',
+                )}
               >
                 {id}
               </td>
               <td className={[table.cell, 'txt-left'].join(' ')}>
-                {(name !== "") || officialName}
+                {name ?? legalName}
               </td>
               <td className={table.cell}>
                 {country} {getFlagByCountryName(country)}

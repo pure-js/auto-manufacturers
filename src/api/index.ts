@@ -1,1 +1,1 @@
-export { getManufacturers } from './api'
+export { getManufacturers } from './api';

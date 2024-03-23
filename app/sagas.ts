@@ -1,4 +1,5 @@
 import { takeLatest } from 'redux-saga/effects';
+
 // import { fetchManufacturers } from './api';
 
 // worker Saga: will be fired on USER_FETCH_REQUESTED actions
@@ -29,7 +30,7 @@ const fetchUser = () => {};
   and only the latest one will be run.
 */
 function* mySaga() {
-  yield takeLatest("MANUFACTURERS_FETCH_REQUESTED", fetchUser);
+  yield takeLatest('MANUFACTURERS_FETCH_REQUESTED', fetchUser);
 }
 
 export default mySaga;

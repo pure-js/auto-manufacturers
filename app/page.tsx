@@ -1,9 +1,8 @@
 // import { useEffect, useState } from 'react';
-
-import Table from '@/components/table';
-import { getManufacturers } from '@/api/index';
-
 import styles from '@/components/layout/grid.module.css';
+import Table from '@/components/table';
+
+import { getManufacturers } from '@/api/index';
 
 const HomePage = async () => {
   const manufacturers = await getManufacturers().then((data) => data.Results);
