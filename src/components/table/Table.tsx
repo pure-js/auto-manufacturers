@@ -47,7 +47,7 @@ const Table = ({ manufacturers }: TableProps) => {
                 {id}
               </td>
               <td className={[table.cell, 'txt-left'].join(' ')}>
-                {name || officialName}
+                {(name !== "") || officialName}
               </td>
               <td className={table.cell}>
                 {country} {getFlagByCountryName(country)}
