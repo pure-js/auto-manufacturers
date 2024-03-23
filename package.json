@@ -6,9 +6,8 @@
     "build": "next build",
     "start": "next start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out",
-    "test": "jest",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx src/",
+    "test": "vitest",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src/ app/",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "format:check": "prettier --check ."
@@ -34,7 +33,6 @@
     "@storybook/react": "^7.0.27",
     "@storybook/testing-library": "^0.2.0",
     "@trivago/prettier-plugin-sort-imports": "~4.3.0",
-    "@types/jest": "^29.5.3",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
@@ -49,15 +47,13 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "~7.34.1",
     "eslint-plugin-storybook": "^0.6.12",
-    "gh-pages": "^6.0.0",
-    "jest": "^29.6.1",
     "prettier": "3.2.5",
     "prettier-plugin-css-order": "2.0.1",
     "storybook": "^7.1.0",
-    "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1",
-    "typescript": "^5.1.6",
-    "typescript-plugin-css-modules": "5.0.2"
+    "typescript": "^5.2.2",
+    "typescript-plugin-css-modules": "5.0.2",
+    "vitest": "~1.4.0"
   },
   "peerDependencies": {
     "@types/node": "^18.18.0"

@@ -5,6 +5,7 @@ env:
 extends:
   - love
   - plugin:react/recommended
+  - plugin:react/jsx-runtime
   - prettier
 parserOptions:
   ecmaVersion: latest
@@ -14,4 +15,3 @@ plugins:
   - prettier
 rules:
   '@typescript-eslint/explicit-function-return-type': 'off'
-  'react/react-in-jsx-scope': 'off'
