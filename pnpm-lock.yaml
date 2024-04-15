@@ -110,8 +110,8 @@ devDependencies:
     specifier: 3.2.5
     version: 3.2.5
   prettier-plugin-css-order:
-    specifier: 2.0.1
-    version: 2.0.1(postcss@8.4.38)(prettier@3.2.5)
+    specifier: 2.1.2
+    version: 2.1.2(postcss@8.4.38)(prettier@3.2.5)
   storybook:
     specifier: ^7.1.0
     version: 7.1.0
@@ -10919,8 +10919,8 @@ packages:
       fast-diff: 1.3.0
     dev: true
 
-  /prettier-plugin-css-order@2.0.1(postcss@8.4.38)(prettier@3.2.5):
-    resolution: {integrity: sha512-Y+wZ0wI7/qFUritirJksQn13KqbcNC3OZXSxGh1ui/X39hAeMW9md+Mp7fjk8H4ZQQ8c5CTYZxShoBfAal/79A==}
+  /prettier-plugin-css-order@2.1.2(postcss@8.4.38)(prettier@3.2.5):
+    resolution: {integrity: sha512-vomxPjHI6pOMYcBuouSJHxxQClJXaUpU9rsV9IAO2wrSTZILRRlrxAAR8t9UF6wtczLkLfNRFUwM+ZbGXOONUA==}
     engines: {node: '>=16'}
     peerDependencies:
       prettier: 3.x
