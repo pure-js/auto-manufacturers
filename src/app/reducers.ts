@@ -1,4 +1,8 @@
-export default function counter(state = 0, action: any) {
+interface ActionT {
+  type: 'INCREMENT' | 'INCREMENT_IF_ODD' | 'DECREMENT';
+}
+
+export default function counter(state = 0, action: ActionT) {
   switch (action.type) {
     case 'INCREMENT':
       return state + 1;
