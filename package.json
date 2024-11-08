@@ -1,7 +1,6 @@
 {
   "name": "auto-manufacturers",
   "version": "1.0.1",
-  "type": "module",
   "scripts": {
     "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
