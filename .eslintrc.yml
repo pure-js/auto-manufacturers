@@ -3,7 +3,7 @@ env:
   es2021: true
   node: true
 extends:
-  - love
+  # - love
   - plugin:react/recommended
   - plugin:react/jsx-runtime
   - prettier
@@ -12,6 +12,5 @@ parserOptions:
   sourceType: module
 plugins:
   - react
-  - prettier
 rules:
   '@typescript-eslint/explicit-function-return-type': 'off'

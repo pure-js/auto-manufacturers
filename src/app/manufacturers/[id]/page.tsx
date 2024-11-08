@@ -1,7 +1,7 @@
 import styles from '@/components/layout/grid.module.css';
 
 export function generateStaticParams() {
-  return [{ id: '/manufacturers/955' }, { id: '956' }, { id: '957' }];
+  return [{ id: '955' }, { id: '956' }, { id: '957' }]; // TODO: fix hardcoded values
 }
 
 export default async function Manufacturer({
