@@ -1,12 +1,13 @@
-// @ts-check
-const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
+import { PHASE_DEVELOPMENT_SERVER } from 'next/constants';
 
-module.exports = async (phase) => {
+import type { NextConfig } from 'next';
+
+export default async (phase: string) => {
   if (phase === PHASE_DEVELOPMENT_SERVER) {
     /**
      * @type {import('next').NextConfig}
      */
-    const nextConfig = {
+    const nextConfig: NextConfig = {
       reactStrictMode: true,
       output: 'export',
     };
@@ -16,7 +17,7 @@ module.exports = async (phase) => {
   /**
    * @type {import('next').NextConfig}
    */
-  const nextConfig = {
+  const nextConfig: NextConfig = {
     reactStrictMode: true,
     output: 'export',
     basePath: '/auto-manufacturers', // GitHub pages
