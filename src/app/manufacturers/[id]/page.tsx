@@ -16,7 +16,7 @@ export async function generateStaticParams() {
 export default async function Manufacturer({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  readonly params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
 
