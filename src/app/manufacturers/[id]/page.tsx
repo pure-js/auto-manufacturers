@@ -1,7 +1,16 @@
 import styles from '@/components/layout/grid.module.css';
 
-export function generateStaticParams() {
-  return [{ id: '955' }, { id: '956' }, { id: '957' }]; // TODO: fix hardcoded values
+import { getManufacturers } from '@/api';
+
+interface Manufacturer {
+  Mfr_ID: number;
+}
+
+export async function generateStaticParams() {
+  const manufacturers = await getManufacturers().then((data) =>
+    data.Results.map((x: Manufacturer) => ({ id: x.Mfr_ID.toString() })),
+  );
+  return manufacturers;
 }
 
 export default async function Manufacturer({
@@ -10,6 +19,7 @@ export default async function Manufacturer({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
+
   return (
     <main className={styles.container}>
       <h1>{id}</h1>
