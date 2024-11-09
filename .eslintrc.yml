@@ -4,9 +4,9 @@ env:
   node: true
 extends:
   # - love
-  - plugin:@typescript-eslint/recommended
-  - plugin:react/recommended
+  - plugin:@typescript-eslint/strict
   - plugin:react/jsx-runtime
+  - plugin:react/all
   - prettier
 parser: '@typescript-eslint/parser'
 parserOptions:
@@ -16,5 +16,12 @@ plugins:
   - react
   - '@typescript-eslint'
 rules:
+  'react/jsx-filename-extension': [2, { 'extensions': ['.tsx'] }]
   '@typescript-eslint/explicit-function-return-type': 'off'
+  'react/react-in-jsx-scope': 'off'
+  'react/jsx-uses-react': 'off'
+  'react/jsx-curly-brace-presence': 'off'
+  'react/jsx-max-depth': 'off'
+  'react/jsx-no-bind': 'off'
+  # '@typescript-eslint/naming-convention': 'error'
 root: true

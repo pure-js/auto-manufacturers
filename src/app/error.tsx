@@ -6,8 +6,8 @@ export default function Error({
   error,
   reset,
 }: {
-  error: Error;
-  reset: () => void;
+  readonly error: Error;
+  readonly reset: () => void;
 }) {
   useEffect(() => {
     // TODO: Log the error to an error reporting service
@@ -16,14 +16,14 @@ export default function Error({
 
   return (
     <div>
-      <h2>Something went wrong!</h2>
+      <h2>{'Something went wrong!'}</h2>
       <button
-        type="button"
         onClick={() => {
           reset();
         }}
+        type="button"
       >
-        Try again
+        {'Try again'}
       </button>
     </div>
   );

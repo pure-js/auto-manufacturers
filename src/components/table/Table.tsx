@@ -11,7 +11,7 @@ import '@/helpers/helpers.css';
 import table from './table.module.css';
 
 interface TableProps {
-  manufacturers:
+  readonly manufacturers:
     | [
         {
           Mfr_ID: number;
@@ -23,18 +23,18 @@ interface TableProps {
     | null;
 }
 
-const Table = ({ manufacturers }: TableProps) => {
+function Table({ manufacturers }: TableProps) {
   const router = useRouter();
 
   return (
     <table className={table.default}>
       <thead>
         <tr>
-          <td className={[table.heading, 'txt-right'].join(' ')}>ID</td>
+          <td className={[table.heading, 'txt-right'].join(' ')}>{'ID'}</td>
           <td className={[table.heading, 'txt-right'].join(' ')}>
-            Common name
+            {'Common name'}
           </td>
-          <td className={table.heading}>Country</td>
+          <td className={table.heading}>{'Country'}</td>
           <td className={table.heading} />
         </tr>
       </thead>
@@ -46,7 +46,7 @@ const Table = ({ manufacturers }: TableProps) => {
             Mfr_CommonName: name,
             Mfr_Name: legalName,
           }) => (
-            <tr key={id} className={table.row}>
+            <tr className={table.row} key={id}>
               <td
                 className={[table.cell, 'txt-right', table.cell_secondary].join(
                   ' ',
@@ -62,15 +62,15 @@ const Table = ({ manufacturers }: TableProps) => {
               </td>
               <td>
                 <a
+                  className={table.cell__link}
+                  href={`/manufacturers/${id}`}
                   onClick={(e) => {
                     e.preventDefault();
                     router.push(`/manufacturers/${id}`);
                   }}
-                  href={`/manufacturers/${id}`}
-                  className={table.cell__link}
                   title="View Manufacturer Details"
                 >
-                  <ArrowTopRightOnSquareIcon width={18} height={18} />
+                  <ArrowTopRightOnSquareIcon height={18} width={18} />
                 </a>
               </td>
             </tr>
@@ -79,5 +79,5 @@ const Table = ({ manufacturers }: TableProps) => {
       </tbody>
     </table>
   );
-};
+}
 export default Table;

@@ -4,7 +4,7 @@ import Table from '@/components/table';
 
 import { getManufacturers } from '@/api/index';
 
-const HomePage = async () => {
+async function HomePage() {
   const manufacturers = await getManufacturers().then((data) => data.Results);
 
   return (
@@ -12,6 +12,6 @@ const HomePage = async () => {
       <Table manufacturers={manufacturers} />
     </main>
   );
-};
+}
 
 export default HomePage;
