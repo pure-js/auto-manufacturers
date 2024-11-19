@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/pure-js/auto-manufacturers/compare/v1.0.1...v1.0.2) (2024-11-09)
+
+
+### Bug Fixes
+
+* hardcoded values ([#167](https://github.com/pure-js/auto-manufacturers/issues/167)) ([92e41be](https://github.com/pure-js/auto-manufacturers/commit/92e41bed8cfe963234201521996e4985ad72ffc0))
+* workflow for a static nextjs build ([#40](https://github.com/pure-js/auto-manufacturers/issues/40)) ([d772c94](https://github.com/pure-js/auto-manufacturers/commit/d772c94af3d83eed8fd484f0e0f8b53972027cab))
+
 ## [1.0.1](https://github.com/pure-js/auto-manufacturers/compare/v1.0.0...v1.0.1) (2023-07-24)
 
 
